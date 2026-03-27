@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400&display=swap" rel="stylesheet">
+    <script src="node_modules/html2canvas/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Background -->
+        <div class="bg-green"></div>
+        <div class="bg-brown"></div>
+        
+        <!-- Header -->
+        <p class="title">Your Collage &lt;3</p>
+        
+        <!-- Window Controls -->
+        <div class="window-controls">
+            <button class="control-btn minimize-btn" id="minimizeBtn">
+                <span class="minimize-line"></span>
+            </button>
+            <button class="control-btn close-btn" id="closeBtn">
+                <span class="close-x line1"></span>
+                <span class="close-x line2"></span>
+            </button>
+        </div>
+        
+        <!-- Divider -->
+        <div class="divider"></div>
+        
+        <!-- Image Slots -->
+        <div class="image-slot slot1" id="slot1" data-slot="1">
+            <p class="slot-text">Click to add image !</p>
+            <img class="slot-image" id="image1" style="display: none;">
+        </div>
+        
+        <div class="image-slot slot2" id="slot2" data-slot="2">
+            <p class="slot-text">Click to add image !</p>
+            <img class="slot-image" id="image2" style="display: none;">
+        </div>
+        
+        <div class="image-slot slot3" id="slot3" data-slot="3">
+            <p class="slot-text">Click to add image !</p>
+            <img class="slot-image" id="image3" style="display: none;">
+        </div>
+        
+        <div class="image-slot slot4" id="slot4" data-slot="4">
+            <p class="slot-text">Click to add image !</p>
+            <img class="slot-image" id="image4" style="display: none;">
+        </div>
+        
+        <!-- Save Button -->
+        <button class="save-btn" id="saveBtn">
+            <p class="save-text">Click!</p>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
